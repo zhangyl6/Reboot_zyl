@@ -1,7 +1,7 @@
-##nginx
-##php
-##mysql
-##zabbix
+## nginx
+## php
+## mysql
+## zabbix
 
 
 yum install gcc make gd-devel libjpeg-devel libpng-devel bzip2-devel libcurl-devel -y
