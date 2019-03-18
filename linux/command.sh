@@ -63,9 +63,6 @@ nginx:v2:指定要创建的目标镜像名
 
 
 
-
-
-
 #SQL
 #创建一张表
 create table AAAA （
