@@ -21,8 +21,30 @@ kubectl get ep nginx
 
 ##docker
 #运行ubuntu镜像输出Hello world 
-docker run ubuntu:15.10 /bin/echo "Hello world"
-#
+docker run centos /bin/echo "Hello world"
+#运行docker并且进入容器
+docker run -it centos /bin/bash
+#查看启动容器
+docker ps
+#查看容器内标准输出
+docker logs （container id）
+-f 动态输出
+#查看已有的镜像
+docker images
+#查看镜像列表
+docker search nginx
+#导出镜像
+docker save images_name.tar images_name
+#删除镜像
+docker rmi images_name
+#载入镜像
+docker pull nginx
+#启动一个容器
+docker run -d -P --name=con_name nginx
+-d:让容器在后台运行。
+-P:将容器内部使用的网络端口映射到我们使用的主机上。
+--name 设置名字
+
 
 
 
