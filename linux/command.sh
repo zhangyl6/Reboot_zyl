@@ -43,7 +43,24 @@ docker pull nginx
 docker run -d -P --name=con_name nginx
 -d:让容器在后台运行。
 -P:将容器内部使用的网络端口映射到我们使用的主机上。
+-p:是容器内部端口绑定到指定的主机端口。
 --name 设置名字
+#进入容器
+docker attach con_name
+#删除容器
+docker rm zhang
+#查看容器内部运行的进程
+docker top con_name
+#停止容器
+docker stop con_name
+#更新容器
+docker commit -m="has update" -a="runoob" e218edb10161 nginx:v2
+-m:提交的描述信息
+-a:指定镜像作者
+e218edb10161：容器ID
+nginx:v2:指定要创建的目标镜像名
+
+
 
 
 
